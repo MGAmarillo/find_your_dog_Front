@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Poppins Extra Bold';
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('woff2'),
+         url('./assets/fonts/Poppins-ExtraBold.ttf') format('woff'),
+         url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('./assets/fonts/Poppins-Medium.ttf') format('woff2'),
+         url('./assets/fonts/Poppins-Medium.ttf') format('woff'),
+         url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 50px;
+    width: 100%;
+    height: 100px;
+}
+
+.navBar img{
+    width: 15%;
+}
+
+.navBar a {
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Poppins Medium';
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.navBar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navBar a:hover::after {
+    transform: translateX(0%);
+}
+
+.navBar button {
+    width: 174px;
+    height: 56px;
+    border-radius: 25px;
+    margin-left: auto;
+    font-family: 'Poppins Extra Bold';
+    font-size: 20px;
+    color: #f2cd5c;
+    background-color: white;
+    border: none;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.navBar button:hover {
+    background-color: #f2cd5c;
+    color: white;
+    border: none;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.title h1{
+    font-family: 'Poppins Extra Bold';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Optional: Adds space between the boxes */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
