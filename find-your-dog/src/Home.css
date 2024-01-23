@@ -55,7 +55,7 @@
 .navBar button {
     width: 174px;
     height: 56px;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-left: auto;
     font-family: 'Poppins Extra Bold';
     font-size: 20px;
@@ -72,7 +72,7 @@
 }
 
 body{
-    background-image: url("https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-image: url("./assets/images/Fondo.png");
 }
 
 .title{
@@ -92,9 +92,55 @@ body{
 .content {
     display: flex;
     justify-content: space-between; /* Optional: Adds space between the boxes */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start; /* Alinea los elementos en el centro */
+    position: relative;
+}
+
+.box img:not(.imagenPrincipal) {
+    height: 150px; /* Ajusta este valor según tus necesidades */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del tamaño especificado sin distorsionarse */
+}
+
+.box p{
+    font-family: 'Poppins Medium';
+    font-size: 15px,
+}
+
+.box button{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Poppins Extra Bold';
+    font-size: 15px;
+    color: #f2cd5c;
+    background-color: white;
+    border: none;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.box button:hover {
+    background-color: #f2cd5c;
+    color: white;
+    border: none;
+}
+
+.firstBox{
+    margin-left: 100px;
+}
+
+.lastBox{
+    margin-right: 100px;
+}
+
+.imagenPrincipal{
+    box-sizing: border-box;
+    width: 70%;
+    align-self: center;
 }
