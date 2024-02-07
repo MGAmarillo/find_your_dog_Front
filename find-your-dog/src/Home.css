@@ -144,3 +144,107 @@ body{
     width: 70%;
     align-self: center;
 }
+
+.information{
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    border-radius: 10vh 10vh 0 0;
+}
+
+.informationBlock{
+    text-align: center;
+    color:black;
+    font-family: 'Poppins Medium';
+}
+
+.informationBlock img{
+    width: 25vh;
+    height: 25vh;
+    margin-bottom: 3vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.informationBlock img:hover{
+    transform: scale(1.1);
+}
+
+.cta{
+    width: 100%;
+    background-image:url("./assets/images/Fondo2.png");
+    border-radius: 0vh 0vh 10vh 10vh;
+}
+
+.ctaImages{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.cta img{
+    height: 60%;
+}
+
+.ctaText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10vh 0vh 5vh 0vh;
+}
+
+.ctaText h1{
+    font-family: 'Poppins Extra Bold';
+    font-size: 13vh;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.ctaText button{
+    width: 50vh;
+    height: 13vh;
+    border-radius: 15px;
+    margin-top: 5vh;
+    font-family: 'Poppins Extra Bold';
+    font-size: 20px;
+    color: #f2cd5c;
+    background-color: white;
+    border: none;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.ctaText button:hover {
+    background-color: #f2cd5c;
+    color: white;
+    border: none;
+}
+
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    align-items: center;
+  }
+
+.footerImages img{
+   height: 30px;
+   padding-left: 5vh;
+}
+
+.footerLogo img{
+    height: 9vh;
+}
